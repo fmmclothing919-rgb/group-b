@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MediBook — Book Health Appointments Online</title>
+  <meta name="description" content="MediBook lets you book appointments with trusted doctors in minutes. Choose a specialty, pick a time, and you're done." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ===== Navigation ===== -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-logo">M</span> MediBook
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="booking.html">Book Appointment</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <span class="eyebrow">● Trusted by 12,000+ patients</span>
+        <h1>Book a doctor's visit <span>in under a minute.</span></h1>
+        <p class="lead">
+          Skip the phone calls. Browse specialists, pick a time that works for you,
+          and get instant confirmation — all from one simple place.
+        </p>
+        <div class="hero-cta">
+          <a href="booking.html" class="btn btn-accent">Book Appointment</a>
+          <a href="about.html"   class="btn btn-outline">Meet the Team</a>
+        </div>
+      </div>
+
+      <aside class="hero-card" aria-label="Sample appointment">
+        <span class="pill">Today's schedule</span>
+        <div class="appt-mini">
+          <span class="dot"></span>
+          <div>
+            <div class="title">Dr. Amina Yusuf · General</div>
+            <div class="sub">09:30 AM · Room 204</div>
+          </div>
+        </div>
+        <div class="appt-mini">
+          <span class="dot" style="background:#f59e0b"></span>
+          <div>
+            <div class="title">Dr. Chika Okafor · Dental</div>
+            <div class="sub">11:00 AM · Room 110</div>
+          </div>
+        </div>
+        <div class="appt-mini">
+          <span class="dot" style="background:#0ea5e9"></span>
+          <div>
+            <div class="title">Dr. Ibrahim Musa · Cardiology</div>
+            <div class="sub">02:30 PM · Room 305</div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ===== Features ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Why people choose MediBook</h2>
+        <p>Built around how patients actually want to book care — fast, clear, and stress-free.</p>
+      </div>
+      <div class="grid-3">
+        <div class="feature">
+          <div class="icon">⚡</div>
+          <h3>Instant booking</h3>
+          <p>Pick a slot and get a confirmation in seconds. No callbacks, no waiting.</p>
+        </div>
+        <div class="feature">
+          <div class="icon">🩺</div>
+          <h3>Verified specialists</h3>
+          <p>Every doctor on MediBook is licensed and reviewed by real patients.</p>
+        </div>
+        <div class="feature">
+          <div class="icon">🔒</div>
+          <h3>Private & secure</h3>
+          <p>Your information stays encrypted and is never shared without consent.</p>
+        </div>
+        <div class="feature">
+          <div class="icon">📅</div>
+          <h3>Smart reminders</h3>
+          <p>We send you reminders by email so you never miss an appointment.</p>
+        </div>
+        <div class="feature">
+          <div class="icon">💬</div>
+          <h3>Real support</h3>
+          <p>Need to reschedule? A real human is one message away — not a chatbot.</p>
+        </div>
+        <div class="feature">
+          <div class="icon">🌍</div>
+          <h3>Wherever you are</h3>
+          <p>Mobile-first design that works on any device, any network speed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Specialties ===== -->
+  <section class="section" style="background:#fff;border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+    <div class="container">
+      <div class="section-head">
+        <h2>Specialties we cover</h2>
+        <p>From everyday care to specialist consultations.</p>
+      </div>
+      <div class="chips">
+        <span class="chip">General Consultation</span>
+        <span class="chip">Dentistry</span>
+        <span class="chip">Pediatrics</span>
+        <span class="chip">Dermatology</span>
+        <span class="chip">Cardiology</span>
+        <span class="chip">Physiotherapy</span>
+        <span class="chip">Mental Health</span>
+        <span class="chip">Optometry</span>
+      </div>
+      <div style="text-align:center;margin-top:36px">
+        <a href="booking.html" class="btn btn-primary">Find your appointment →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="brand"><span class="brand-logo">M</span> MediBook</div>
+      <small>© <span id="year"></span> MediBook — Group B Capstone Project</small>
+      <div>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

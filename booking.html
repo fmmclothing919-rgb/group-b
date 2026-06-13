@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Book an Appointment — MediBook</title>
+  <meta name="description" content="Choose a specialty, pick a doctor, and select a time slot. Quick online appointment booking." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><span class="brand-logo">M</span> MediBook</a>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="booking.html">Book Appointment</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-head">
+    <div class="container">
+      <h1>Book your appointment</h1>
+      <p>Fill in your details, choose a doctor and a time that works — we'll handle the rest.</p>
+    </div>
+  </section>
+
+  <section class="container">
+    <div id="banner" class="banner" role="status" aria-live="polite"></div>
+
+    <div class="booking-grid">
+      <!-- ===== Form ===== -->
+      <form id="booking-form" class="card" novalidate>
+        <h2>Patient & visit details</h2>
+        <p class="muted">All fields marked required.</p>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="fullname">Full name *</label>
+            <input id="fullname" type="text" placeholder="Jane Doe" required />
+            <span class="error">Please enter your full name.</span>
+          </div>
+          <div class="field">
+            <label for="email">Email *</label>
+            <input id="email" type="email" placeholder="jane@example.com" required />
+            <span class="error">Please enter a valid email.</span>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="phone">Phone *</label>
+            <input id="phone" type="tel" placeholder="+234 800 000 0000" required />
+            <span class="error">Please enter a valid phone number.</span>
+          </div>
+          <div class="field">
+            <label for="service">Service *</label>
+            <select id="service" required>
+              <option value="">Select a service</option>
+            </select>
+            <span class="error">Please choose a service.</span>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="doctor">Doctor *</label>
+            <select id="doctor" required>
+              <option value="">Select a doctor</option>
+            </select>
+            <span class="error">Please choose a doctor.</span>
+          </div>
+          <div class="field">
+            <label for="date">Date *</label>
+            <input id="date" type="date" required />
+            <span class="error">Please pick a date.</span>
+          </div>
+        </div>
+
+        <div class="field full" style="margin-bottom:14px">
+          <label>Available time *</label>
+          <div id="slots" class="slots" aria-label="Available time slots"></div>
+        </div>
+
+        <div class="field full" style="margin-bottom:20px">
+          <label for="notes">Notes for the doctor (optional)</label>
+          <textarea id="notes" rows="3" placeholder="Anything we should know in advance?"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-accent" style="width:100%">
+          Confirm appointment
+        </button>
+      </form>
+
+      <!-- ===== Summary ===== -->
+      <aside class="card summary" aria-label="Appointment summary">
+        <h2>Summary</h2>
+        <p class="muted">Updates as you fill the form.</p>
+
+        <div class="line"><span class="k">Service</span><span class="v" id="sum-service">—</span></div>
+        <div class="line"><span class="k">Doctor</span><span class="v" id="sum-doctor">—</span></div>
+        <div class="line"><span class="k">Date</span><span class="v" id="sum-date">—</span></div>
+        <div class="line"><span class="k">Time</span><span class="v" id="sum-time">—</span></div>
+        <div class="line"><span class="k">Duration</span><span class="v" id="sum-duration">—</span></div>
+        <div class="total"><span>Total</span><span id="sum-total">₦0</span></div>
+
+        <p class="muted" style="margin-top:18px;font-size:13px">
+          You won't be charged now — payment is made at the clinic.
+        </p>
+      </aside>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="brand"><span class="brand-logo">M</span> MediBook</div>
+      <small>© <span id="year"></span> MediBook — Group B Capstone Project</small>
+      <div>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="booking.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — MediBook</title>
+  <meta name="description" content="Get in touch with the MediBook team — questions, feedback or partnership inquiries." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><span class="brand-logo">M</span> MediBook</a>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="booking.html">Book Appointment</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-head">
+    <div class="container">
+      <h1>Contact us</h1>
+      <p>We typically respond within one business day.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:30px">
+    <div class="container">
+      <div class="contact-grid">
+
+        <form class="card" id="contact-form" novalidate>
+          <h2>Send us a message</h2>
+          <p class="muted">We'll get back to you by email.</p>
+
+          <div id="contact-banner" class="banner" role="status" aria-live="polite"></div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="c-name">Your name *</label>
+              <input id="c-name" type="text" required />
+              <span class="error">Please enter your name.</span>
+            </div>
+            <div class="field">
+              <label for="c-email">Email *</label>
+              <input id="c-email" type="email" required />
+              <span class="error">Please enter a valid email.</span>
+            </div>
+          </div>
+
+          <div class="field full" style="margin-bottom:14px">
+            <label for="c-subject">Subject</label>
+            <input id="c-subject" type="text" placeholder="How can we help?" />
+          </div>
+
+          <div class="field full" style="margin-bottom:20px">
+            <label for="c-msg">Message *</label>
+            <textarea id="c-msg" rows="5" required></textarea>
+            <span class="error">Please write a short message.</span>
+          </div>
+
+          <button type="submit" class="btn btn-accent">Send message</button>
+        </form>
+
+        <aside class="card info-card">
+          <h2>Other ways to reach us</h2>
+          <p class="muted">Prefer email or a phone call? Here's how.</p>
+
+          <div class="info-row">
+            <div class="info-icon">✉️</div>
+            <div>
+              <h4>Email</h4>
+              <p>hello@medibook.example</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="info-icon">📞</div>
+            <div>
+              <h4>Phone</h4>
+              <p>+234 800 000 0000 (Mon–Fri, 9am–5pm)</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="info-icon">📍</div>
+            <div>
+              <h4>Address</h4>
+              <p>Faculty of Information Technology,<br/>University Campus</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <div class="info-icon">⏱️</div>
+            <div>
+              <h4>Response time</h4>
+              <p>Within 1 business day</p>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="brand"><span class="brand-logo">M</span> MediBook</div>
+      <small>© <span id="year"></span> MediBook — Group B Capstone Project</small>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Contact form: simple inline validation + success banner
+    (function () {
+      const f = document.getElementById('contact-form');
+      const b = document.getElementById('contact-banner');
+      f.addEventListener('submit', (e) => {
+        e.preventDefault();
+        let ok = true;
+        const name = document.getElementById('c-name');
+        const mail = document.getElementById('c-email');
+        const msg  = document.getElementById('c-msg');
+        [[name, name.value.trim().length >= 2],
+         [mail, /^\S+@\S+\.\S+$/.test(mail.value.trim())],
+         [msg,  msg.value.trim().length >= 5]
+        ].forEach(([el, valid]) => {
+          el.closest('.field').classList.toggle('invalid', !valid);
+          if (!valid) ok = false;
+        });
+        if (!ok) return;
+        b.textContent = `✓ Thanks ${name.value.trim()} — your message is on its way.`;
+        b.classList.add('show');
+        f.reset();
+      });
+    })();
+  </script>
+</body>
+</html>
