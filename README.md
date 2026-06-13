@@ -8,17 +8,16 @@ booking confirmation.
 
 ## Group Members
 
-> The current project files identify these details as placeholders. Replace
-> them with the group's official names and roles before submission.
-
-| Name         | Role                                |
-| ------------ | ----------------------------------- |
-| Ada Okeke    | Project Lead and Frontend Developer |
-| Bola Adesina | UI/UX Designer                      |
-| Chinedu Eze  | Frontend Developer                  |
-| Doris Umeh   | Content Lead                        |
-| Emeka Obi    | Quality Assurance and Deployment    |
-| Funmi Ajayi  | Documentation and Research          |
+| Name                    | Role                            |
+| ----------------------- | ------------------------------- |
+| Farida Muhammad Musa    | Frontend Lead                   |
+| Kwasari Jonah Jeremiah  | Content Member                  |
+| Abubakar Sa'ad          | Content Lead                    |
+| Abbas A. Yusuf          | Frontend Member                 |
+| Samaila Yau             | Content Member                  |
+| Abubakar Hamman         | UI Designer Member              |
+| Rejoice Timothy         | UI Designer Lead                |
+| Muhammad Munir Hayatu   | Content Lead                    |
 
 ## Technologies Used
 
