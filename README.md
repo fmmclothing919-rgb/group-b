@@ -18,6 +18,7 @@ booking confirmation.
 | Abubakar Hamman         | UI Designer Member              |
 | Rejoice Timothy         | UI Designer Lead                |
 | Muhammad Munir Hayatu   | Content Lead                    |
+| Abbas Hammangabdo       | Content Lead                    |
 
 ## Technologies Used
 
