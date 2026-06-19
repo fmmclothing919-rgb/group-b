@@ -8,17 +8,17 @@ booking confirmation.
 
 ## Group Members
 
-| Name                    | Role                            |
+| Name                    |ID Number                         |
 | ----------------------- | ------------------------------- |
-| Farida Muhammad Musa    | Frontend Lead                   |
-| Kwasari Jonah Jeremiah  | Content Member                  |
-| Abubakar Sa'ad          | Content Lead                    |
-| Abbas A. Yusuf          | Frontend Member                 |
-| Samaila Yau             | Content Member                  |
-| Abubakar Hamman         | UI Designer Member              |
-| Rejoice Timothy         | UI Designer Lead                |
-| Muhammad Munir Hayatu   | Content Lead                    |
-| Abbas Hammangabdo       | Content Lead                    |
+| Farida Muhammad Musa    | dl/imt/21u/0088                   |
+| Kwasari Jonah Jeremiah  | dl/imt/23d/0123                 |
+| Abubakar Sa'ad          | dl/imt/23d/0147                   |
+| Abbas A. Yusuf          | dl/imt/21u/0083                 |
+| Samaila Yau             | dl/imt/21u/0100                 |
+| Abubakar Hamman         | dl/imt/21u/0106            |
+| Rejoice Timothy         | dl/imt/21u/0076               |
+| Muhammad Munir Hayatu   | dl/imt/23d/0141                   |
+| Abbas Hammangabdo       | dl/imt/21u/0111                  |
 
 ## Technologies Used
 
